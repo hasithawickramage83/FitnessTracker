@@ -94,8 +94,8 @@ DATABASES = {
         'NAME': 'fitness_db',
         'USER': 'postgres',
         'PASSWORD': 'pass@123',
-        'HOST': 'localhost',  # or 'db' if Django runs in Docker later
-        'PORT': '5432',
+        'HOST': 'tcp.us-east-1.clawcloudrun.com',  # or 'db' if Django runs in Docker later
+        'PORT': '39938',
     }
 }
 
