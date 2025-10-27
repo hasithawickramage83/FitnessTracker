@@ -63,6 +63,8 @@ def activity_list(request):
 
 @api_view(['GET', 'PUT', 'DELETE'])
 @permission_classes([IsAuthenticated])
+
+
 def activity_detail(request, pk):
     try:
         activity = Activity.objects.get(pk=pk, user=request.user)
