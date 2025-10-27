@@ -55,5 +55,12 @@ class ActivityTests(APITestCase):
         response = self.client.delete(url, format='json')
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
         self.assertEqual(Activity.objects.count(), 0)
+# def test_update_activity(self):
+#     activity = Activity.objects.create(user="self.user.username", activity_type="Workout", status="planned")
+#     url = reverse('activity-detail', args=[activity.id])
+#     data = {"activity_type": "Meal", "status": "completed"}
+#     response = self.client.put(url, data, format='json')
+#     self.assertEqual(response.status_code, status.HTTP_200_OK)
+#     self.assertEqual(Activity.objects.get().activity_type, "Meal")
 
 
