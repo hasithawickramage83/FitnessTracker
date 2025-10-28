@@ -55,4 +55,5 @@ def test_delete_activity(self):
     response = self.client.delete(url, format='json')
     self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
     self.assertEqual(Activity.objects.count(), 0)
+#     test
 
