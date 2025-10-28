@@ -28,7 +28,7 @@ jobs:
       # Step 4: Run tests
       - name: Run tests
         run: |
-          pytest tests/
+           pytest api/test.py
 
       # Step 5: Log in to Docker Hub
       - name: Log in to Docker Hub
