@@ -9,15 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Step 0:
-      - uses: actions/checkout@v4
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
-      - name: Install package
-        run: pip install -r requirements.txt
-      - name: Test the code
-        run: python manage.py test
-
+ 
       # Step 1: Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
