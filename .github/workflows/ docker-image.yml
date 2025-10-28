@@ -1,5 +1,6 @@
-name: CI/CD - Test, Build, and Push Docker Image
- on:
+name: Build and Push Docker Image
+
+on:
   push:
     branches: [ "main" ]
 
@@ -31,4 +32,4 @@ jobs:
           push: true
           tags: |
             prathap83/fitnesstracker-backend:latest
-
+            prathap83/fitnesstracker-backend:${{ github.sha }}
